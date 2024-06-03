@@ -15,7 +15,7 @@ db_conn = client.get_database("cycle")
 print(db_conn)
 
 # CSV 파일 읽기
-csv_file = pd.read_csv('data/cycle_2301.csv', encoding='cp949')
+csv_file = pd.read_csv('data/cycle_2312.csv', encoding='cp949')
 
 # 행렬 크기 출력
 col_size = csv_file.columns.size
