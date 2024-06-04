@@ -3,7 +3,7 @@ import pymongo
 import time
 
 # MongoDB 연결
-client = pymongo.MongoClient("mongodb://localhost:27018")
+client = pymongo.MongoClient("mongodb://localhost:27019")
 print(client)
 
 # 데이터베이스 목록 출력
