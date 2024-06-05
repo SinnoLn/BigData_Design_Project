@@ -18,7 +18,7 @@ size = len(rental_shop_info_csv)
 for i in range(size):
     rental_shop_info.append(
         {
-            "rental_shop_id": str(rental_shop_info_csv['대여소_ID'][i]),
+            "station_id": str(rental_shop_info_csv['대여소_ID'][i]),
             "address1": str(rental_shop_info_csv['주소1'][i]),
             "address2": str(rental_shop_info_csv['주소2'][i]),
             "latitude": float(rental_shop_info_csv['위도'][i]),
