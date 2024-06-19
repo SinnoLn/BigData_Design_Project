@@ -3,7 +3,7 @@ import pymongo
 from datetime import datetime
 
 # CSV 파일 읽기
-broken_info_csv = pd.read_csv('data/broken_info_2311-12.csv', encoding='cp949')
+broken_info_csv = pd.read_csv('data/1-6.csv', encoding='cp949')
 
 # MongoDB 연결 설정
 client = pymongo.MongoClient("mongodb://localhost:27018/")
@@ -26,4 +26,4 @@ for i in range(size):
     )
 
 # MongoDB에 데이터 삽입
-db_conn.get_collection("broken_info").insert_many(broken_info)
+db_conn.get_collection("test").insert_many(broken_info)
